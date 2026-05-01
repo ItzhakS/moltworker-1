@@ -198,6 +198,8 @@ if (process.env.SLACK_BOT_TOKEN && process.env.SLACK_APP_TOKEN) {
         botToken: process.env.SLACK_BOT_TOKEN,
         appToken: process.env.SLACK_APP_TOKEN,
         enabled: true,
+        dmPolicy: 'open',
+        allowFrom: ['*'],
     };
 }
 
